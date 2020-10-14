@@ -1,17 +1,21 @@
-Sub Union_namja()
+Sub Union_namja3()
     Dim inta    As Integer
     Dim rangA   As Range
     Dim intb    As Integer
     
     intb = Range("F100").End(xlUp).Row
     
-'  합집합으로 남자 묶기
+    Range("o6").CurrentRegion.Offset(1, 0).Clear
+    
+'  합집합으로 묶기
     For inta = 7 To intb
-        If Range("G" & inta) = "남" Then
+        If Range("G" & inta) = "여" And Range("L" & inta) >= 70 Then
+' 값이 없을때에는 첫 셀을 잡는 수식
             If rangA Is Nothing Then
-                Set rangA = Range("G" & inta)
+                Set rangA = Range("G" & inta).Offset(0, -1).Resize(1, 7)
             Else
-                Set rangA = Union(rangA, Range("G" & inta))
+' 합집합으로 하나씩 셀을 잡기. offset과 resize로 범위잡기.
+                Set rangA = Union(rangA, Range("G" & inta).Offset(0, -1).Resize(1, 7))
             End If
         End If
     Next
@@ -20,6 +24,8 @@ Sub Union_namja()
     If rangA Is Nothing Then
         MsgBox "Nothing"
     Else
-        rangA.EntireRow.Interior.ColorIndex = 3
+' 실제로 하고자 하는 행동
+        rangA.Copy Range("o7")
+'' copy 셀 => 그곳에 복붙해라.
     End If
 End Sub
