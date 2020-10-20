@@ -60,3 +60,10 @@
 '           -> Header:=xlGuess(엑셀 스스로 판단) xlYes(제목이다. 데이터로 취급 안함) xlNo(데이터이다)
 
 
+''' 고급필터
+''  rngD.AdvancedFilter xlFilterCopy, rngC, rngP, True
+'        ->  xlFilterInPlace : 원본 범위에서 필터링 할것인가?
+'        ->  xlFilterCopy    : 새로운 필드범위에서 필터링 할 것인가?
+'        ->  조건범위, (xlFilterCopy의 경우)새로 붙여넣을 범위, 중복제거 여부를 묻는 순서로 이루어짐.
+'        ->  조건범위, 대상범위를 잡을 때 위의 제목들도 보통 같이 설정. 그리고 데이터 항목의 내용이 완전히 일치해야 함.
+
