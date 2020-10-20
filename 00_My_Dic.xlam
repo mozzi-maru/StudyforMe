@@ -1,3 +1,24 @@
+''' 셀 복사하기(Copy)
+''   range("A1").copy
+
+''' 셀 선택하기(Select)
+''   range("A1").select
+
+''' 셀 이동하기(Offset)
+''   range("A1").offset(0,1)
+''   offset(안의 숫자는 행, 열 순서로 이동)
+
+''' 현재 활성화된 워크시트를 지칭하기(Activesheet)
+''   Activesheet.Range("A1")
+
+
+''' 현재 선택된 셀부터 전체 셀 선택하기(CurrentRegion)
+''   Range("A1").CurrentRegion
+
+''' 중복제거하기
+''   Range("H:H").RemoveDuplications columns:=1 Header:=xlNo
+'       columns:=숫자 -> 열 갯수
+
 ''' if 구문
 
 ' if 조건식 then
