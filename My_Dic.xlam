@@ -1,0 +1,41 @@
+''' if 구문
+
+' if 조건식 then
+'   명령어
+' else <- 위의 조건식이 거짓이라면(일치하지 않는다면)
+'   명령어
+' end if <- 반드시 써야함!
+
+
+''' for 구문
+'   for 인수 = 정수(부터) to 정수(까지)
+'       명령문
+'   next <- 반드시 입력해야 끝임을 알 수 있음!
+
+
+''' 반복문 끝내기(C언어의 Break)
+'   for a = 1 to 2
+'       명령문
+'   exit for
+'   next
+
+'       Exit for -> for 구문 끝내기
+'       Exit funtion -> 함수 끝내기
+'       Exit sub -> 프로시저 끝내기
+
+''' 정렬하기(Sort)
+''   dim inta    as integer
+''   dim rangA   as range
+
+''       set rangA = range("A1:AB100")      ==> 반드시 범위설정이 필요!
+
+''  rangA.sort key1:=range("B1"), order1:= xlAscending, _ #언더바로 줄바꿈선언 하는게 좋음
+''              key2:=range("C1"), order2:= xlDecending, Header:=xlNo
+'       -> key : 제목이 될 부분 => key1, key2, key3 ...
+'       -> order : 조건식(내림차순이나 오름차순을 선택) => order1, order2, order3 ...
+'       -> xlAscending => 오름차순
+'       -> xlDecending => 내림차순
+'       ->  Header => 해당 셀(위 식에서는 B1)은 제목인가? 헤더는 Sort문의 가장 마지막에만 와야한다.
+'           -> Header:=xlGuess(엑셀 스스로 판단) xlYes(제목이다. 데이터로 취급 안함) xlNo(데이터이다)
+
+
