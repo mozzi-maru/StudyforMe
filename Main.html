@@ -1,52 +1,96 @@
 <!DOCTYPE html>
 <html>
-
+    <style>
+        @media screen and (min-width:800){
+            html{
+                display:block;
+            }
+        }
+    </style>
     <head>
-        <title> Hello world!</title>
-        <meta charset="utf-8">
+        <meta charset="utf-8" lang=ko>
     </head>
-        <body>
-            <style>
-                a{
-                    color:aquamarine;
-                }
-            </style>
-            <h1>What is HTML?</h1>
+    <body>
+        <style>
+           /* 윗쪽 레이어 스타일 */
+            .upside_layer{
+                display:grid;
+                grid-template-columns: auto;
+                border:3px none green;
+                align-self:center;
+                background-color:  cornflowerblue;
+                padding:50px;
+                text-align:center;
+                background-position: center;
+            }
+            .upside_second_layer{
+                display:grid;
+                grid-template-columns:1fr 1fr 1fr 1fr;
+                padding-top: 50px;
+            }
+        </style>
+<!-- 윗쪽 레이어 -->
+        <div class=upside_layer>
+            <h1 style="text-align:center";>HELLO WORLD!!!</h1>
+        <!-- 두번째 윗쪽 레이어 -->
+            <div class=upside_second_layer>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+            </div>
+        </div>
 
+        <style>
+            .left_layer{
+                display:grid;
+                grid-template-columns:150px 1fr;
+                padding-top:10px;
+                border-right:10px black;
+            }
+            .center_layer{
+                text-align:center;
+            }
+            a{
+                text-decoration: none;
+            }
+        </style>
+<!-- 좌측 레이어 -->
+        <div class=left_layer>
             <ul>
-                <li>
-                    <a href="https://www.w3.org/TR/html5/" target="_blank" title="html5 specification">
-                        W3.org
-                    </a>
-                </li>
-                <li>
-                    <a href=3.html>Number3</a>
-                </li>
-                <li>
-                    <a href=2.html>practice
-                    </a>
-                </li>
-                <li>
-                    <a href=http://info.cern.ch target="_blank" title="html5 specification">Acient Web
-                    </a>
-                </li>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+            </ul>
+            
+<!-- 중앙 레이어 -->
+                <div class=center_layer>
+                    <dir>
+                        <br><a href=http://www.naver.com>SHIP BONUSES</a>
+                    </dir>
+                    <dir>
+                        <div id="ship_bonus_title"><br>Industrial Command Ships bonuses (per skill level):<br></div>
+                        5% bonus to ship cargo and ore hold capacity<br>
+                        3% bonus to Mining Foreman Burst effect strength and duration<br>
+                        1% bonus to Shield Command Burst effect strength and duration<br>
+                        10% bonus to Drone hitpoints, damage and ore mining yield<br>
+                        10% reduction in Drone ice harvesting cycle time<br><br>
+                    </dir>
+            
+                    <dir>
+                        <div id="ship_bonus_title"><br>Role Bonus:<br></div>
+                        100% bonus to Drone ore mining yield<br>
+                        25% reduction in Drone ice harvesting cycle time<br>
+                        100% bonus to Drone damage<br>
+                        400% bonus to Remote Shield Booster optimal range<br>
+                        90% reduction to effective distance traveled for jumpfatigue<br>
+                        • Can use 3 Command Burst modules<br>
+                        250% bonus to Tractor Beam range<br>
+                        100% bonus to Tractor Beam velocity<br>
+                        500% bonus to Survey Scanner range<br><br>
+                    </dir>
+                </div>
 
-            </ul>
-            <ul>
-                <li>
-                    <a href = 1_html.html>HTML
-                    </a>
-                </li>
-                <li>
-                    <a href = 2_css.html>CSS
-                    </a>
-                </li>
-                <li>
-                    JAVA
-                </li>
-                <li>
-                    Python
-                </li>
-            </ul>
-        </body>
+        </div>
+    </body>
 </html>
