@@ -67,3 +67,67 @@
 '        ->  조건범위, (xlFilterCopy의 경우)새로 붙여넣을 범위, 중복제거 여부를 묻는 순서로 이루어짐.
 '        ->  조건범위, 대상범위를 잡을 때 위의 제목들도 보통 같이 설정. 그리고 데이터 항목의 내용이 완전히 일치해야 함.
 
+'''   펑션 기능 활용
+''    Private Function Data_Check_Color() As String
+' 해당 인스턴스 내에서만 활용하는 펑션으로 Data_Check_Color라는 펑션은 스트링 타입으로 받겠다.
+
+''    Dim txtError        As String
+''
+''    txtError = ""
+''
+''    If Me.Tb_Name = "" Then
+''        txtError = "성명 누락"
+''        Me.Tb_Name.BackColor = vbRed
+''    Else
+''        Me.Tb_Name.BackColor = vbWhite
+''    End If
+''
+''    If Me.Cb_MF = "" Then
+''        txtError = txtError & vbCr & "성별 누락"
+''        Me.Cb_MF.BackColor = vbRed
+''    Else
+''        Me.Cb_MF.BackColor = vbWhite
+''    End If
+''
+''    If Me.Tb_Age = "" Then
+''        txtError = txtError & vbCr & "나이 누락"
+''        Me.Tb_Age.BackColor = vbRed
+''    ElseIf Not IsNumeric(Me.Tb_Age) Then
+''        txtError = txtError & vbCr & "나이는 숫자만 입력"
+''        Me.Tb_Age.BackColor = vbRed
+''    Else
+''        Me.Tb_Age.BackColor = vbWhite
+''    End If
+''
+''    Data_Check_Color = txtError
+''
+''End Function
+
+' 펑션 기능은 C언어에서의 return과 유사한 의미
+
+
+''' PDF로 파일 저장하기
+''  dim strPath as string
+''  dim strFile as string
+''  dim strSave as string
+
+''  strPath = "Dir"
+''  strFile = "FileName"
+''  strSave = srtPath & strFile & format(Date, "YYMMDD")
+
+''  sheetname.ExportAsFixedFormat _
+''
+''                    저장하고자 하는 파일 확장자는 무엇인가
+''                    Type:=xlTypePDF, _
+''                    저장하고자 하는 파일의 이름은 무엇인가
+''                    Filename:=strSave, _
+''                    저장하고자 하는 파일의 품질은 어떻게 할 것인가
+''                    Quality:=xlQualityStandard, _
+''                    파일에 대한 속성을 포함해서 저장할 것인가?(맞다면 True)
+''                    IncludeDocProperties:= True _
+''                    전체 페이지를 저장할 것인가?(맞다면 False, 아니라면 아래와 같이{From=시작하는 페이지 To=마지막 페이지})
+''                    IgnorePrintAreas:=True, From:=1, To:=1_
+''                    저장하기 전에 미리보기를 열 것인가?(열 것이라면 True, 아니라면 False)
+''                    OpenAfterPublish:=False
+                    
+                    
