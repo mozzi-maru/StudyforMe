@@ -135,3 +135,20 @@
 ''                    OpenAfterPublish:=False
                     
                     
+''' Like 구문으로 분류하기
+''  For i = 1 To lengthText
+'     한글 찾기
+''     If Mid(Range("E2"), i, 1) Like "[ㄱ-흫]" Then
+''          hangul = hangul + 1
+'     영문 소문자 찾기
+''      ElseIf Mid(Range("e2"), i, 1) Like "[a-z]" Then
+''          englishsmall = englishsmall + 1
+'     영문 대문자 찾기
+''      ElseIf Mid(Range("E2"), i, 1) Like "[A-Z]" Then
+''          englishbig = englishbig + 1
+'     숫자 찾기
+''      ElseIf Mid(Range("E2"), i, 1) Like "[0-9]" Then
+'     나머지 찾기
+''      Else
+''      End If
+''    Next i
