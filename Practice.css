@@ -1,0 +1,90 @@
+/* 미디어쿼리 연습 */
+
+@media screen and (min-width:800){
+    html{
+        background-color: aqua;
+    }
+}
+.Top_Title, .Top_Title_Two{
+    border:none;
+    padding:20px;
+    background-color: royalblue;
+    position:relative;
+    color:white;
+    display:grid;
+}
+.Dark_Mode_Button{
+    border:solid 5px;
+    border-radius:15px;
+    width:120px;
+    background-color: royalblue;
+}
+.Top_Title_Two{
+    text-align:center;
+    color:white;
+    font-size:25px;
+    z-index:2;
+    height:45px;
+}
+.Top_Title_Two.Center_Block{
+    text-align: center;
+    border:solid teal 100px;
+    display:grid;
+    z-index:1;
+}
+.Top_Title_Menu{
+    border:none;
+    padding:none;
+    background-color: royalblue;
+    display:grid;
+    height:33px;
+    grid-template-columns: 1fr 1fr 1fr auto;
+    color:white;  text-align:center;
+}
+.Top_Title_Menu_List_First, .Top_Title_Menu_List_Second{
+    text-align:center;
+    float:left;
+}
+.Top_Menu_Sitemap{
+    background-color: skyblue;
+    height:25px;
+    border:none;
+}
+.Top_Menu_Sitemap_Now{
+    color:gray;
+    display:block;
+    position:relative;
+    left:10%;
+}
+.Center_Main{
+    display:block;
+    margin:0px auto;
+    background-color: salmon;
+    width:50%;
+    height: 500px;
+    border:none;
+    z-index:2;
+}
+.Menu_Select{
+    display:block;
+    margin:0px auto;
+    width:320px;
+    background-color: seagreen;
+    z-index:1;
+}
+.Space_Bar{
+    width:50px;
+    float:left;
+}
+h1{
+    border:solid black;
+    width:1000px;
+    text-align:center;
+    position:absolute;
+    top:50%;
+    left:auto;
+}
+a, li{
+    text-decoration:none;
+    color:white;
+}
