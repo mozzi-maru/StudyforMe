@@ -1,96 +1,56 @@
 <!DOCTYPE html>
 <html>
-    <style>
-        @media screen and (min-width:800){
-            html{
-                display:block;
-            }
-        }
-    </style>
-    <head>
-        <meta charset="utf-8" lang=ko>
+    <head> 
+        <title>HTML</title> 
+        <meta charset="utf-8">
+        <meta type="Description">
+        <link href="practice.css" rel="stylesheet" type="text/css">
+        <script src="practice.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
-    <body>
-        <style>
-           /* 윗쪽 레이어 스타일 */
-            .upside_layer{
-                display:grid;
-                grid-template-columns: auto;
-                border:3px none green;
-                align-self:center;
-                background-color:  cornflowerblue;
-                padding:50px;
-                text-align:center;
-                background-position: center;
-            }
-            .upside_second_layer{
-                display:grid;
-                grid-template-columns:1fr 1fr 1fr 1fr;
-                padding-top: 50px;
-            }
-        </style>
-<!-- 윗쪽 레이어 -->
-        <div class=upside_layer>
-            <h1 style="text-align:center";>HELLO WORLD!!!</h1>
-        <!-- 두번째 윗쪽 레이어 -->
-            <div class=upside_second_layer>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>4</li>
+    <body>   
+     
+        <div class="Top_Title">
+            <input class="Dark_Mode_Button" type="button" Value="Hello Everyone!" onclick="ButtonEffect.ChangeDayAndNight()">
+        </div>
+<!-- 최상단 메뉴바 -->
+        <div class="Top_Title_Two">
+<!-- 최상단 중간 메뉴바 -->
+            <div Class="Top_Title_Two.Center_Block">
+                HELLO WORLD!
+            </div>
+        </div>
+<!-- 최상단 하단 메뉴바 -->
+        <div class="Top_Title_Menu">
+            <div class="Top_Title_Menu_List">
+                <div class="Top_Title_Menu_List_First">
+                    <a href='http://www.naver.com'>Naver  </a>
+                </div>
+                <div class="Space_Bar"></div>
+                <div class="Top_Title_Menu_List_Second"> 
+                    <a href='http://mabonogi.nexon.com'>Mabinogi.Nexon  </a>        
+                </div>
+                <div class="Space_Bar">  </div>
+                <div class="Top_Title_Menu_List_Third">
+                    <a href='http://www.daum.net'>Daum  </a>                   
+                </div>                
+            </div>
+        </div>
+<!-- 최상부 하단 사이트맵 -->
+        <div class="Top_Menu_Sitemap">
+            <div class="Top_Menu_Sitemap_Now">
+                이곳은 메인 페이지 입니다.
+            </div>
+        </div>
+        
+
+<!-- 중간 메인메뉴 -->
+        <div class="Center_Main">
+            <div class="Menu_Select">
             </div>
         </div>
 
-        <style>
-            .left_layer{
-                display:grid;
-                grid-template-columns:150px 1fr;
-                padding-top:10px;
-                border-right:10px black;
-            }
-            .center_layer{
-                text-align:center;
-            }
-            a{
-                text-decoration: none;
-            }
-        </style>
-<!-- 좌측 레이어 -->
-        <div class=left_layer>
-            <ul>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-            </ul>
-            
-<!-- 중앙 레이어 -->
-                <div class=center_layer>
-                    <dir>
-                        <br><a href=http://www.naver.com>SHIP BONUSES</a>
-                    </dir>
-                    <dir>
-                        <div id="ship_bonus_title"><br>Industrial Command Ships bonuses (per skill level):<br></div>
-                        5% bonus to ship cargo and ore hold capacity<br>
-                        3% bonus to Mining Foreman Burst effect strength and duration<br>
-                        1% bonus to Shield Command Burst effect strength and duration<br>
-                        10% bonus to Drone hitpoints, damage and ore mining yield<br>
-                        10% reduction in Drone ice harvesting cycle time<br><br>
-                    </dir>
-            
-                    <dir>
-                        <div id="ship_bonus_title"><br>Role Bonus:<br></div>
-                        100% bonus to Drone ore mining yield<br>
-                        25% reduction in Drone ice harvesting cycle time<br>
-                        100% bonus to Drone damage<br>
-                        400% bonus to Remote Shield Booster optimal range<br>
-                        90% reduction to effective distance traveled for jumpfatigue<br>
-                        • Can use 3 Command Burst modules<br>
-                        250% bonus to Tractor Beam range<br>
-                        100% bonus to Tractor Beam velocity<br>
-                        500% bonus to Survey Scanner range<br><br>
-                    </dir>
-                </div>
 
-        </div>
     </body>
 </html>
+
