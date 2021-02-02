@@ -1,20 +1,30 @@
-#작성중. 미완성파일
-
-import math as mt
 import random as rd
 
-exp_now = 1
-exp_gol = 100
+
+get_exp = 1
 level = 1
+exp_req = 20
+exp_now = 0
 
 
-i=0
-while i > 1000:
-    exp_get = rd.randint(1, 100)
-    exp_now = exp_now + exp_get
-    if exp_now > exp_gol:
-        level = level + 1
-    print(exp_now)
-    i = i +1
+def level_up2(exp_now, level):
+    exp_requ = exp_req
+    if exp_now > exp_requ:
+        while exp_now > exp_requ:
+            exp_now = exp_now - exp_requ
+            level = level + 1
 
-print(level)
+            def exp_require(exp_req):
+                exp_req = (exp_req + 30 ^ 3)
+                return exp_req
+
+            exp_requ = exp_require(exp_requ)
+            print("Level UP!!!")
+            print("Now Your EXP. = " + str(exp_now))
+            print("Require EXP is = " + str(exp_requ))
+            print("Your Level is = " + str(level) + "\n")
+    return exp_now, level
+
+
+exp_now = exp_now + rd.randint(500, 1000)
+level_up2(exp_now, level)
